@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  color: #cf2d2d;
+}
+
+.btn {
+  padding: 10px;
+  margin: 5px;
+  font-size: 1.5rem;
+  width: 20%;
+  background-color: #ab2020;
+  color: #fff;
+  border-radius: 20px;
+}
+
+#content {
+  font-size: 10em;
+}
