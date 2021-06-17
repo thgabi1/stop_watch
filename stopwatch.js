@@ -36,10 +36,12 @@ start_btn.addEventListener("click", () => {
   stopwatchID = setInterval(() => {
     timerCycle();
   }, 1000);
+  start_btn.disabled = true;
 });
 
 stop_btn.addEventListener("click", () => {
   clearInterval(stopwatchID);
+  start_btn.disabled = false;
 });
 
 reset_btn.addEventListener("click", () => {
@@ -49,3 +51,5 @@ reset_btn.addEventListener("click", () => {
   ct.innerHTML = defaultValue;
   clearInterval(stopwatchID);
 });
+
+console.log("Test");
