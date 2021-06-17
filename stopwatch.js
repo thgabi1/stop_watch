@@ -13,7 +13,6 @@ var defaultValue = `0${hr}:0${min}:0${sec}`;
 let timerCycle = () => {
   sec++;
   ct.innerHTML = `0${hr}:0${min}:0${sec}`;
-  console.log(sec);
   if (sec >= 10) {
     ct.innerHTML = `0${hr}:0${min}:${sec}`;
   } else if (min >= 10) {
@@ -51,5 +50,3 @@ reset_btn.addEventListener("click", () => {
   ct.innerHTML = defaultValue;
   clearInterval(stopwatchID);
 });
-
-console.log("Test");
